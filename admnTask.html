@@ -1,296 +1,333 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <title>Dasboard Task</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Boxicons CDN Link -->
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <!-- Sidebar Section Start -->
     <div class="sidebar">
       <div class="logo-details">
-        <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">CodingLab</span>
+        <i class=""></i>
+        <span class="logo_name">LOGO</span>
       </div>
       <ul class="nav-links">
         <li>
           <a href="#" class="active">
-            <i class="bx bx-grid-alt"></i>
+            <i class="fa fa-th-large"></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-box"></i>
-            <span class="links_name">Product</span>
+            <i class="fa fa-bandcamp"></i>
+            <span class="links_name">KPLs</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-list-ul"></i>
-            <span class="links_name">Order list</span>
+            <i class="fa fa-bell-o"></i>
+            <span class="links_name">Notifications</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="links_name">Analytics</span>
+            <i class="fa fa-database"></i>
+            <span class="links_name">Dataset</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-coin-stack"></i>
-            <span class="links_name">Stock</span>
+            <i class="fa fa-file-text-o"></i>
+            <span class="links_name">Report</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-book-alt"></i>
-            <span class="links_name">Total order</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-user"></i>
-            <span class="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-message"></i>
-            <span class="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-heart"></i>
-            <span class="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
+            <i class="fa fa-cog"></i>
             <span class="links_name">Setting</span>
-          </a>
-        </li>
-        <li class="log_out">
-          <a href="#">
-            <i class="bx bx-log-out"></i>
-            <span class="links_name">Log out</span>
           </a>
         </li>
       </ul>
     </div>
+    <!-- Sidebar Section End -->
+
+    <!-- Home Section Start -->
     <section class="home-section">
+      <!-- Header Section Start -->
+      <header>
       <nav>
         <div class="sidebar-button">
-          <i class="bx bx-menu sidebarBtn"></i>
+          <i class="fa fa-bars sidebarBtn"></i>
           <span class="dashboard">Dashboard</span>
         </div>
-        <div class="search-box">
-          <input type="text" placeholder="Search..." />
-          <i class="bx bx-search"></i>
+        <div class="search-wrap">
+        <div class="search-notification">
+          <a href="#"><i class="fa fa-search"></i></a>
+          <a href="#"><i class="fa fa-moon-o"></i></a>
+          <a class="notification-info" href="#"><i class="fa fa-bell-o"></i></i>
+          <span>6</span>
+          </a>
         </div>
         <div class="profile-details">
           <img src="images/profile.jpg" alt="" />
-          <span class="admin_name">Prem Shahi</span>
-          <i class="bx bx-chevron-down"></i>
+          <span class="admin_name">Jhon R.</span>
+          <i class="fa fa-chevron-down"></i>
         </div>
+      </div>
       </nav>
+      </header>
+    <!-- Header Section End -->
 
-      <div class="home-content">
-        <div class="overview-boxes">
+      <main class="home-content">
+
+        <!-- Overview Boxes Section Start -->
+        <section class="overview-boxes">
           <div class="box">
+            <i class="fa fa-long-arrow-up cart"></i>
             <div class="right-side">
-              <div class="box-topic">Total Order</div>
-              <div class="number">40,876</div>
-              <div class="indicator">
-                <i class="bx bx-up-arrow-alt"></i>
-                <span class="text">Up from yesterday</span>
+              <div class="box-topic">Total Income</div>
+              <div class="number">$8.500
+                <div class="indicator">
+                  <i class="fa fa-long-arrow-up"></i>
+                  <span class="text">4.85%</span>
+                </div>
               </div>
             </div>
-            <i class="bx bx-cart-alt cart"></i>
           </div>
           <div class="box">
+            <i class="fa fa-long-arrow-down cart two"></i>
             <div class="right-side">
               <div class="box-topic">Total Sales</div>
-              <div class="number">38,876</div>
-              <div class="indicator">
-                <i class="bx bx-up-arrow-alt"></i>
-                <span class="text">Up from yesterday</span>
+              <div class="number">3.500K
+                <div class="indicator">
+                  <i class="fa fa-long-arrow-down"></i>
+                  <span class="text">5.25%</span>
+                </div>
               </div>
             </div>
-            <i class="bx bxs-cart-add cart two"></i>
           </div>
           <div class="box">
+            <i class="fa fa-long-arrow-up cart three"></i>
             <div class="right-side">
-              <div class="box-topic">Total Profit</div>
-              <div class="number">$12,876</div>
-              <div class="indicator">
-                <i class="bx bx-up-arrow-alt"></i>
-                <span class="text">Up from yesterday</span>
+              <div class="box-topic">New Client</div>
+              <div class="number">1.700K
+                <div class="indicator">
+                  <i class="fa fa-long-arrow-up"></i>
+                  <span class="text">3.55%</span>
+                </div>
               </div>
             </div>
-            <i class="bx bx-cart cart three"></i>
           </div>
           <div class="box">
+            <i class="fa fa-long-arrow-down cart four"></i>
             <div class="right-side">
-              <div class="box-topic">Total Return</div>
-              <div class="number">11,086</div>
-              <div class="indicator">
-                <i class="bx bx-down-arrow-alt down"></i>
-                <span class="text">Down From Today</span>
+              <div class="box-topic">Total User</div>
+              <div class="number">14.800K
+                <div class="indicator">
+                  <i class="fa fa-long-arrow-down down"></i>
+                  <span class="text">10.30%</span>
+                </div>
               </div>
             </div>
-            <i class="bx bxs-cart-download cart four"></i>
           </div>
-        </div>
+        </section>
+        <!-- Overview Boxes Section End -->
 
-        <div class="sales-boxes">
+        <!-- sales Box Section Start -->
+         <section class="sales-boxes sales-chart"> 
           <div class="recent-sales box">
-            <div class="title">Recent Sales</div>
-            <div class="sales-details">
-              <ul class="details">
-                <li class="topic">Date</li>
-                <li><a href="#">02 Jan 2021</a></li>
-                <li><a href="#">02 Jan 2021</a></li>
-                <li><a href="#">02 Jan 2021</a></li>
-                <li><a href="#">02 Jan 2021</a></li>
-                <li><a href="#">02 Jan 2021</a></li>
-                <li><a href="#">02 Jan 2021</a></li>
-                <li><a href="#">02 Jan 2021</a></li>
-              </ul>
-              <ul class="details">
-                <li class="topic">Customer</li>
-                <li><a href="#">Alex Doe</a></li>
-                <li><a href="#">David Mart</a></li>
-                <li><a href="#">Roe Parter</a></li>
-                <li><a href="#">Diana Penty</a></li>
-                <li><a href="#">Martin Paw</a></li>
-                <li><a href="#">Doe Alex</a></li>
-                <li><a href="#">Aiana Lexa</a></li>
-                <li><a href="#">Rexel Mags</a></li>
-                <li><a href="#">Tiana Loths</a></li>
-              </ul>
-              <ul class="details">
-                <li class="topic">Sales</li>
-                <li><a href="#">Delivered</a></li>
-                <li><a href="#">Pending</a></li>
-                <li><a href="#">Returned</a></li>
-                <li><a href="#">Delivered</a></li>
-                <li><a href="#">Pending</a></li>
-                <li><a href="#">Returned</a></li>
-                <li><a href="#">Delivered</a></li>
-                <li><a href="#">Pending</a></li>
-                <li><a href="#">Delivered</a></li>
-              </ul>
-              <ul class="details">
-                <li class="topic">Total</li>
-                <li><a href="#">$204.98</a></li>
-                <li><a href="#">$24.55</a></li>
-                <li><a href="#">$25.88</a></li>
-                <li><a href="#">$170.66</a></li>
-                <li><a href="#">$56.56</a></li>
-                <li><a href="#">$44.95</a></li>
-                <li><a href="#">$67.33</a></li>
-                <li><a href="#">$23.53</a></li>
-                <li><a href="#">$46.52</a></li>
-              </ul>
+            <div class="title">Statistics
+              <select id="test" name="test">
+                <option value="test"><i class="fa fa-calendar-o"></i>19 Aug - 25 Aug</option>
+              </select>
             </div>
-            <div class="button">
-              <a href="#">See All</a>
+            
+          </div>
+          <div class="top-sales box">
+            <div class="title">Sales
+              <a href=""><i class="fa fa-ellipsis-h"></i></a>
+            </div>
+            
+            <div class="piecart-wrap">
+            <div class="pie">
+              <div class="slice-right"></div>
+              <div class="slice-left"></div>
+              <div class="percent">
+                <div class="number"><span>3.500</span><small>Total</small></div>
+              </div>
+            </div>
+
+            <div class="piecart-info">
+              <ul>
+                <li><i class="fa fa-circle clr-blue"></i>Current Week</li>
+                <li>2.500</li>
+                <li class="clr-green"><i class="fa fa-long-arrow-up"></i> 88%</li>
+              </ul>
+              <ul>
+                <li><i class="fa fa-circle clr-red"></i>Last Week</li>
+                <li>1.000</li>
+                <li class="clr-red"><i class="fa fa-long-arrow-down"></i> 58%</li>
+              </ul>
+              <!-- <ul>
+                <li>Current Week</li>
+                <li>2.500</li>
+                <li>88%</li>
+              </ul> -->
+            </div>
+          </div>
+
+          </div>
+        </section> 
+        <!-- sales Box Section End -->
+
+        <!-- sales Box Section Start -->
+        <section class="sales-boxes">
+          <div class="recent-sales box">
+            <div class="search-data-wrap">
+              <div class="title">Last Order
+                <select id="test" name="test">
+                  <option value="test"><i class="fa fa-calendar-o"></i>19 Aug - 25 Aug</option>
+                </select>
+              </div>
+            </div>
+            <div class="sales-details">
+                <table class="table-data">
+                  <tr>
+                    <th>Customer Name</th>
+                    <th>Order No.</th>
+                    <th>Amount</th>
+                    <th>Payment Type</th>
+                    <th>Date</th>
+                  </tr>
+                  <tr class="bg-clr">
+                    <td><img src="images/profile.jpg" alt=""> <span>Reglina Cooper</span></td>
+                    <td>#79081</td>
+                    <td>$2,500</td>
+                    <td>Credit Card</td>
+                    <td>12.09.2019 <a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+                  </tr>
+                  <tr class="bg-clr">
+                    <td><img src="images/profile.jpg" alt=""> <span>Reglina Cooper</span></td>
+                    <td>#79081</td>
+                    <td>$2,500</td>
+                    <td>Credit Card</td>
+                    <td>12.09.2019 <a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+                  </tr>
+                  <tr class="bg-clr">
+                    <td><img src="images/profile.jpg" alt=""> <span>Reglina Cooper</span></td>
+                    <td>#79081</td>
+                    <td>$2,500</td>
+                    <td>Credit Card</td>
+                    <td>12.09.2019 <a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+                  </tr>
+                  <tr class="bg-clr">
+                    <td><img src="images/profile.jpg" alt=""> <span>Reglina Cooper</span></td>
+                    <td>#79081</td>
+                    <td>$2,500</td>
+                    <td>Credit Card</td>
+                    <td>12.09.2019 <a href="#"><i class="fa fa-ellipsis-v"></i></a></td>
+                  </tr>
+                </table>
             </div>
           </div>
           <div class="top-sales box">
-            <div class="title">Top Seling Product</div>
+            <div class="title">Transactions  <a href=""><i class="fa fa-ellipsis-h"></i></a></div>
             <ul class="top-sales-details">
               <li>
                 <a href="#">
                   <img src="images/sunglasses.jpg" alt="" />
-                  <span class="product">Vuitton Sunglasses</span>
+                  <span class="product">Reglina Cooper
+                    <small>09.45 AM - 12-August</small>
+                  </span>
                 </a>
-                <span class="price">$1107</span>
+                <span class="price clr-green">+$1107
+                  <small>Payment</small>
+                </span>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/jeans.jpg" alt="" />
-                  <span class="product">Hourglass Jeans </span>
+                  <img src="images/sunglasses.jpg" alt="" />
+                  <span class="product">Reglina Cooper
+                    <small>09.45 AM - 12-August</small>
+                  </span>
                 </a>
-                <span class="price">$1567</span>
+                <span class="price clr-red">+$1107
+                  <small>Payment</small>
+                </span>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/nike-min.jpg" alt="" />
-                  <span class="product">Nike Sport Shoe</span>
+                  <img src="images/sunglasses.jpg" alt="" />
+                  <span class="product">Reglina Cooper
+                    <small>09.45 AM - 12-August</small>
+                  </span>
                 </a>
-                <span class="price">$1234</span>
+                <span class="price clr-green">+$1107
+                  <small>Payment</small>
+                </span>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/scarves.jpg" alt="" />
-                  <span class="product">Hermes Silk Scarves.</span>
+                  <img src="images/sunglasses.jpg" alt="" />
+                  <span class="product">Reglina Cooper
+                    <small>09.45 AM - 12-August</small>
+                  </span>
                 </a>
-                <span class="price">$2312</span>
+                <span class="price clr-green">+$1107
+                  <small>Payment</small>
+                </span>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/blueBag.jpg" alt="" />
-                  <span class="product">Succi Ladies Bag</span>
+                  <img src="images/sunglasses.jpg" alt="" />
+                  <span class="product">Reglina Cooper
+                    <small>09.45 AM - 12-August</small>
+                  </span>
                 </a>
-                <span class="price">$1456</span>
+                <span class="price clr-green">+$1107
+                  <small>Payment</small>
+                </span>
               </li>
-              <li>
-                <a href="#">
-                  <img src="images/bag.jpg" alt="" />
-                  <span class="product">Gucci Womens's Bags</span>
-                </a>
-                <span class="price">$2345</span>
-              </li>
+              
 
-              <li>
-                <a href="#">
-                  <img src="images/addidas.jpg" alt="" />
-                  <span class="product">Addidas Running Shoe</span>
-                </a>
-                <span class="price">$2345</span>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="images/shirt.jpg" alt="" />
-                  <span class="product">Bilack Wear's Shirt</span>
-                </a>
-                <span class="price">$1245</span>
-              </li>
+              
             </ul>
           </div>
-        </div>
-      </div>
+        </section>
+        <!-- sales Box Section End -->
+      </main>
     </section>
+    <!-- Home Section End -->
+
 
     <script>
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".sidebarBtn");
-      sidebarBtn.onclick = function () {
-        sidebar.classList.toggle("active");
-        if (sidebar.classList.contains("active")) {
-          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-      };
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")){
+      sidebarBtn.classList.replace("fa-bars" ,"fa-sliders");
+    }else
+      sidebarBtn.classList.replace("fa-sliders", "fa-bars");
+    }
+
     </script>
   </body>
 </html>
 
 
 
-========================================================
+
+======================
 
 
 
-<style>
-  /* Googlefont Poppins CDN Link */
+/* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -302,7 +339,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #0A2558;
+  background: #6956E4;
   transition: all 0.5s ease;
 }
 .sidebar.active{
@@ -332,6 +369,7 @@
   position: relative;
   list-style: none;
   height: 50px;
+  margin-bottom: 1px;
 }
 .sidebar .nav-links li a{
   height: 100%;
@@ -342,10 +380,12 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: #8677EC;
+  border-left: 4px solid #E3DBFF;
 }
 .sidebar .nav-links li a:hover{
-  background: #081D45;
+  background: #8677EC;
+  border-left: 4px solid #E3DBFF;
 }
 .sidebar .nav-links li i{
   min-width: 60px;
@@ -359,14 +399,9 @@
   font-weight: 400;
   white-space: nowrap;
 }
-.sidebar .nav-links .log_out{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 .home-section{
   position: relative;
-  background: #f5f5f5;
+  background: #F5F7F8;
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
@@ -380,7 +415,7 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  background: #fff;
+  background: #f5f7f8;
   display: flex;
   align-items: center;
   position: fixed;
@@ -388,7 +423,7 @@
   left: 240px;
   z-index: 100;
   padding: 0 20px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 1%);
   transition: all 0.5s ease;
 }
 .sidebar.active ~ .home-section nav{
@@ -402,56 +437,49 @@
   font-weight: 500;
 }
 nav .sidebar-button i{
-  font-size: 35px;
+  font-size: 23px;
   margin-right: 10px;
 }
-.home-section nav .search-box{
+.search-notification {
+  padding-right: 30px;
+}
+.search-notification a {
   position: relative;
-  height: 50px;
-  max-width: 550px;
-  width: 100%;
-  margin: 0 20px;
+  margin-right: 10px;
+  color: #515361;
 }
-nav .search-box input{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  background: #F5F6FA;
-  border: 2px solid #EFEEF1;
-  border-radius: 6px;
-  font-size: 18px;
-  padding: 0 15px;
+.search-notification a i.bx {
+  font-size: 20px;
+  color: #515361;
 }
-nav .search-box .bx-search{
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background: #2697FF;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 4px;
-  line-height: 40px;
-  text-align: center;
-  color: #fff;
-  font-size: 22px;
-  transition: all 0.4 ease;
+.search-notification a span {
+    border-radius: 50px;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    background-color: #6B55E6;
+    color: #fff;
+    width: 16px;
+    text-align: center;
+    font-size: 10px;
 }
-.home-section nav .profile-details{
+.home-section nav .profile-details,
+.home-section nav .search-wrap{
   display: flex;
   align-items: center;
-  background: #F5F6FA;
-  border: 2px solid #EFEEF1;
+  /* background: #F5F6FA;
+  border: 2px solid #EFEEF1; */
   border-radius: 6px;
   height: 50px;
-  min-width: 190px;
-  padding: 0 15px 0 2px;
+  min-width: auto;
+  padding: 0 0 0 2px;
 }
 nav .profile-details img{
   height: 40px;
   width: 40px;
-  border-radius: 6px;
   object-fit: cover;
+  border-radius: 100px;
+  border: 2px solid #ccc;
 }
 nav .profile-details .admin_name{
   font-size: 15px;
@@ -461,7 +489,7 @@ nav .profile-details .admin_name{
   white-space: nowrap;
 }
 nav .profile-details i{
-  font-size: 25px;
+  font-size: 14px;
   color: #333;
 }
 .home-section .home-content{
@@ -487,13 +515,13 @@ nav .profile-details i{
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .overview-boxes .box-topic{
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 500;
+  color: #a4a6a9;
 }
 .home-content .box .number{
-  display: inline-block;
-  font-size: 35px;
-  margin-top: -6px;
+  display: flex;
+  font-size: 21px;
   font-weight: 500;
 }
 .home-content .box .indicator{
@@ -503,44 +531,38 @@ nav .profile-details i{
 .home-content .box .indicator i{
   height: 20px;
   width: 20px;
-  background: #8FDACB;
   line-height: 20px;
   text-align: center;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 20px;
-  margin-right: 5px;
+  color: #AED5B7;
+  font-size: 16px;
+  margin-right: 1px;
 }
-.box .indicator i.down{
-  background: #e87d88;
-}
+
 .home-content .box .indicator .text{
   font-size: 12px;
 }
 .home-content .box .cart{
   display: inline-block;
-  font-size: 32px;
+  font-size: 21px;
   height: 50px;
   width: 50px;
-  background: #cce5ff;
+  background: #E7EFFF;
   line-height: 50px;
   text-align: center;
-  color: #66b0ff;
-  border-radius: 12px;
-  margin: -15px 0 0 6px;
+  color: #7C8DDB;
+  border-radius: 15px;
+  margin: 0 10px 0 0;
 }
-.home-content .box .cart.two{
-   color: #2BD47D;
-   background: #C0F2D8;
+.home-content .box .cart.two,
+.home-content .box .cart.four{
+  color: #F4C09D;
+  background: #FBF4EC;
  }
 .home-content .box .cart.three{
-   color: #ffc233;
-   background: #ffe8b3;
+   color: #7C8DDB;
+   background: #E7EFFF;
  }
-.home-content .box .cart.four{
-   color: #e05260;
-   background: #f7d4d7;
- }
+
 .home-content .total-order{
   font-size: 20px;
   font-weight: 500;
@@ -565,14 +587,63 @@ nav .profile-details i{
   align-items: center;
   justify-content: space-between;
 }
+.search-data-wrap {
+  padding-bottom: 30px;
+}
 .sales-boxes .box .title{
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #787878;
   /* margin-bottom: 10px; */
 }
-.sales-boxes .sales-details li.topic{
-  font-size: 20px;
-  font-weight: 500;
+select {
+  background-color: #f8f8f8;
+  border: 1px solid #f2f2f2;
+  padding: 5px 12px;
+  border-radius: 50px;
+  outline: none;
+  color: #787878;
+}
+.home-content .sales-boxes .sales-details table.table-data{
+  color: #AFB1B3;
+  border-spacing: 0;
+  font-size: 14px;
+  width: 100%;
+  border-collapse:separate; 
+  border-spacing: 0 1em;
+}
+.home-content .sales-boxes .sales-details table.table-data tr.bg-clr {
+  background-color: #F8F8F8;
+  border: 0;
+}
+.home-content .sales-boxes .sales-details table.table-data th, 
+.home-content .sales-boxes .sales-details table.table-data td {
+  text-align: left;
+  padding: 8px;
+  font-weight: normal;
+}
+.home-content .sales-boxes .sales-details table.table-data tr td:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.home-content .sales-boxes .sales-details table.table-data tr td:last-child {
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.home-content .sales-boxes .sales-details table.table-data img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 1100px;
+  margin-right: 10px;
+  float: left;
+}
+.home-content .sales-boxes .sales-details table.table-data a i {
+  color: #AFB1B3;
+  margin-left: 10px;
 }
 .sales-boxes .sales-details li{
   list-style: none;
@@ -589,19 +660,6 @@ nav .profile-details i{
   display: flex;
   justify-content: flex-end;
 }
-.sales-boxes .box .button a{
-  color: #fff;
-  background: #0A2558;
-  padding: 4px 12px;
-  font-size: 15px;
-  font-weight: 400;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.sales-boxes .box .button a:hover{
-  background:  #0d3073;
-}
 
 /* Right box */
 .home-content .sales-boxes .top-sales{
@@ -616,15 +674,15 @@ nav .profile-details i{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 22px 0;
 }
 .sales-boxes .top-sales li a img{
   height: 40px;
   width: 40px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 100px;
   margin-right: 10px;
-  background: #333;
+  background: #ccc;
 }
 .sales-boxes .top-sales li a{
   display: flex;
@@ -633,10 +691,161 @@ nav .profile-details i{
 }
 .sales-boxes .top-sales li .product,
 .price{
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
   color: #333;
 }
+.clr-green {
+  color: #86C995;
+}
+.clr-red {
+  color: #E0ACAD;
+}
+.clr-blue {
+  color: #483AF8;
+}
+.sales-boxes .top-sales li .product small,
+.sales-boxes .top-sales li .price small {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+
+
+
+.sales-chart {
+  padding-bottom: 30px;
+}
+.piecart-wrap {
+  text-align: center;
+}
+.piecart-info ul{
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #787878;
+}
+.sales-boxes .top-sales .piecart-info ul li,
+.piecart-info ul li {
+  margin: 10px 0;
+}
+.piecart-info ul:first-child {
+  border-bottom: 1px solid #F7F7F7;
+}
+.piecart-info ul li:first-child i,
+.piecart-info ul li:last-child i{
+  padding-right: 4px;
+  font-size: 10px;
+}
+.pie {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  background-color: #FF995D;
+  font-size: 7em;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pie .slice-right {
+  position: absolute;
+  z-index: 11;
+  background-color: #493CFC;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 0.5em, 0.5em, 0.5em);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pie .slice-left {
+  position: absolute;
+  z-index: 11;
+  background-color: #493CFC;
+  width: 100%;
+  height: 100%;
+  clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pie .percent {
+  position: absolute;
+  z-index: 20;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pie .number {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  padding-top: 50%;
+  line-height: 0;
+  font-size: .3em;
+  color: #485c65;
+  display: grid !important;
+  font-weight: normal !important;
+}
+
+.pie .slice-right {
+  -webkit-animation-delay: 1.2s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: right-slice;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.pie .slice-left {
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: left-slice;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes right-slice {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em);
+  }
+  50% {
+    clip: rect(0, 1em, 0.5em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 1em, 0.5em);
+  }
+}
+@-webkit-keyframes left-slice {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0);
+  }
+  to {
+    clip: rect(0.3em, 0.5em, 1em, 0);
+  }
+}
+
+
+
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar{
@@ -729,20 +938,3 @@ nav .profile-details i{
     width: calc(100% - 60px);
   }
 }
-
-</style>
-
-==================================
-
-<script>
-  let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".sidebarBtn");
-sidebarBtn.onclick = function() {
-  sidebar.classList.toggle("active");
-  if(sidebar.classList.contains("active")){
-  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-}else
-  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-}
-
-</script>
